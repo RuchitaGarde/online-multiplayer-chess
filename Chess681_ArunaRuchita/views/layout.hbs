@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' href="/fontawesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' href="/chessboardjs/css/chessboard.min.css" />
+    <link rel='stylesheet' href="/messenger/build/css/messenger.css" />
+    <link rel='stylesheet' href="/messenger/build/css/messenger-spinner.css" />
+    <link rel='stylesheet' href="/messenger/build/css/messenger-theme-future.css" />
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="{{#if isHomePage}} active {{/if}}"><a href="/" title="Go to home page"><i class="fa fa-home"></i> Home</a></li>
+            <li class="{{#if isPlayPage}} active {{/if}}"><a href="/play" title="Create a new game"><i class="fa fa-gamepad"></i> Play</a></li>            {{#if user}}
+            <li class="{{#if isAccountPage}} active {{/if}}"><a href="/account" title="My account"><span id="loggedUser" data-user="{{ user.name }}"></span><i class="fa fa-user"></i> {{ user.name }}</a></li>
+            <li><a href="/logout" title="Sign out"><i class="fa fa-sign-out"></i></a></li>
+            {{else}}
+            <li class="{{#if isLoginPage}} active {{/if}}"><a href="/login"><i class="fa fa-sign-in"></i> Sign in</a></li>
+            {{/if}}
+
+        </ul>
+        <h3><i class="glyphicon glyphicon-globe"></i> Chess681</h3>
+    </div>
+
+    <div class="content">
+        {{{body}}}
+    </div>
+
+    <div class="footer">
+        <p><a href="/monitor"><i class="fa fa-dashboard"></i>Game Statistics</a></p>
+    </div>
+
+</div> <!-- /container -->
+
+<script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chessboardjs/js/chessboard.min.js"></script>
+<script type="text/javascript" src="/chessjs/dist/chess.min.js"></script>
+<script type="text/javascript" src="/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="/messenger/build/js/messenger.min.js"></script>
+<script type="text/javascript" src="/messenger/build/js/messenger-theme-future.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+<script type="text/javascript" src="/javascripts/chess_681.js"></script>
+
+</body>
+</html>

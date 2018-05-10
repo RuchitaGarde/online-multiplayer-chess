@@ -1,0 +1,9 @@
+{
+    "chess_681": {
+        "db": "mongodb://localhost/chess_681",
+	"es":{
+		 "host": "localhost",
+		 "port": "9200"
+    }
+    }
+}

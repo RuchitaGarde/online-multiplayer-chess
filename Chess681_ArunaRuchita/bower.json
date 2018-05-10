@@ -1,0 +1,32 @@
+{
+  "name": "Chess681",
+  "version": "1.0.0",
+  "authors": [
+    "Aruna Sindhuja Peri"
+  ],
+  "description": "Chess681 web application",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "chess",
+    "chess_681"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "jquery": "2.1.4",
+    "moment": "2.10.6",
+    "lodash": "2.4.1",
+    "messenger": "1.4.2",
+    "fontawesome": "4.4.0",
+    "chessjs": "juangl/chessjs#0.9.0",
+    "chessboardjs": "vstene/chessboardjs#0.3.2"
+  }
+}
