@@ -23,10 +23,10 @@ You need the following things installed on your system to play the game.
 
 ## Architecture
 The Architecture consists of the following modules:
-• User authentication and registration process (/login & /register)
-• Real time multi-player gaming logic (See gaming logic section)
-• RESTful API (/api) for client server communication
-• Real time monitoring dashboard (/monitor)
+	• User authentication and registration process (/login & /register)
+	• Real time multi-player gaming logic (See gaming logic section)
+	• RESTful API (/api) for client server communication
+	• Real time monitoring dashboard (/monitor)
 
 <img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/architecture.png" width="500px" height="350px"/>
 
@@ -40,11 +40,11 @@ chess_681.
 
 ### Steps to run the application
 1) Start your mongoDB server and client:
-	(1) run command prompt as an administrator
+	1) run command prompt as an administrator
 		- Navigate to bin folder inside MongoDB and execute the command below:
 		- `mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"`
 		Example: `C:\Program Files\MongoDB\Server\3.4\bin>mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"`
-	(2) run command prompt as an administrator
+	2) run command prompt as an administrator
 		- Navigate to bin folder inside MongoDB and execute the command below:
 		- `mongo.exe`
 		Example: C:\Program Files\MongoDB\Server\3.4\bin>mongo.exe
@@ -102,15 +102,15 @@ A player also has the provision to change his password, and see when he was last
 	• Certificates folder: This folder contains certificates generated for SSL.
 
 ## Bibliography
-[1] http://chessboardjs.com/
-[2] https://github.com/jhlywa/chess.js
-[3] Course Work slides – Dr David A Wheeler
-[4] https://github.com/coreinfrastructure/best-practices-badge/blob/master/doc/security.md
-[5] https://justin.kelly.org.au/how-to-create-a-self-sign-ssl-cert-with-no-pa/
-[6] https://blog.risingstack.com/node-hero-node-js-authentication-passport-js/
-[7] https://www.techopedia.com/definition/27388/database-authentication
-[8] https://fosterelli.co/dangerous-use-of-express-body-parser
-[9] https://github.com/expressjs/body-parser#express-route-specific
-[10] https://docs.mongodb.com/manual/tutorial/configure-ssl/
+1) http://chessboardjs.com/
+2) https://github.com/jhlywa/chess.js
+3) Course Work slides – Dr David A Wheeler
+4) https://github.com/coreinfrastructure/best-practices-badge/blob/master/doc/security.md
+5) https://justin.kelly.org.au/how-to-create-a-self-sign-ssl-cert-with-no-pa/
+6) https://blog.risingstack.com/node-hero-node-js-authentication-passport-js/
+7) https://www.techopedia.com/definition/27388/database-authentication
+8) https://fosterelli.co/dangerous-use-of-express-body-parser
+9) https://github.com/expressjs/body-parser#express-route-specific
+10) https://docs.mongodb.com/manual/tutorial/configure-ssl/
 
 I would like to specially thank (Aruna Sindhuja Peri)[https://www.linkedin.com/in/aruna-sindhuja-peri-892a9711a/] for her contribution to this project.
