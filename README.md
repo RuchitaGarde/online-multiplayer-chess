@@ -28,6 +28,8 @@ The Architecture consists of the following modules:
 • RESTful API (/api) for client server communication
 • Real time monitoring dashboard (/monitor)
 
+<img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/architecture.png" width="500px" height="350px"/>
+
 ## Installation Instructions
 ### Prerequisites:
 1) Node JS
@@ -40,24 +42,26 @@ chess_681.
 1) Start your mongoDB server and client:
 	(1) run command prompt as an administrator
 		- Navigate to bin folder inside MongoDB and execute the command below:
-		- mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"
-		Example: C:\Program Files\MongoDB\Server\3.4\bin>mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"
+		- `mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"`
+		Example: `C:\Program Files\MongoDB\Server\3.4\bin>mongod.exe --dbpath "C:\Program Files\MongoDB\data\db"`
 	(2) run command prompt as an administrator
 		- Navigate to bin folder inside MongoDB and execute the command below:
-		- mongo.exe
+		- `mongo.exe`
 		Example: C:\Program Files\MongoDB\Server\3.4\bin>mongo.exe
 2) Unzip the project folder
 3) Run node.js command prompt
 	- Navigate to the project folder
-	Example: C:\Users\sindh\Chess681_ArunaRuchita>
+	Example: `C:\~\Chess681_ArunaRuchita>`
 	- Run the below commands
-		> npm install
-		> node app.js OR > node .
+		- `npm install`
+		- `node app.js` OR `node .`
 4) Open your browser and run the localhost https://localhost:3000/ to see the chess681 web app running.
 
 ## Playing instructions and game rules
 This game can be played by multiple users, 2 users per game room. A user needs to first register using his username, email id and password. If he has already done so, he can login using his email id and password. User can also change his password through the accounts page.
 If a user already exists in the database and he attempt to register again the application will not allow the user to register and will show a message at the bottom of the screen as shown below:
+
+<img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/instructions1.png" width="500px" height="350px"/>
 
 Once logged in, the following is a general flow of the game:
 1. Each player can create a game by sending a 'create-game' event to the server.
@@ -71,10 +75,16 @@ Once logged in, the following is a general flow of the game:
 Please note that, if the first player leaves the game after the 2nd player has started the game, the game room will still keep its session. The 2nd player can then share the first player’s game room link with another player, and start playing the game.
 A timer keeps track of the time each player gets to make a move. If a side does not make a move for 300 seconds, the other player is declared as winner. The player can also see all the game moves on the bottom of the application on the right hand side panel ‘Moves’.
 
+<img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/instructions2.png" width="500px" height="350px"/>
+
 If either of the players leave, the other player automatically wins.
 Game statistics: At any point in time, you can see how many games are currently being played, and how many players are online.
 
+<img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/instructions3.png" width="500px" height="350px"/>
+
 A player also has the provision to change his password, and see when he was last active when is logs in and clicks on his own profile name.
+
+<img src="https://github.com/RuchitaGarde/online-multiplayer-chess/blob/master/images/instructions4.png" width="500px" height="350px"/>
 
 ## Code structure and files description:
 	• App.js: This file marks the starting point of the game. This launches the game on localhost at port 3000. This also has all the routes defined.
